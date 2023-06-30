@@ -17,6 +17,7 @@
 * {
   margin: 0;
   font: inherit;
+  font-family: 'Overpass', sans-serif;
 }
 
 img,
@@ -26,6 +27,77 @@ svg {
 }
 
 body {
+  background-color: var(--clr-very-dark-blue);
+
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.rating-container {
+  max-width: 90%;
+  background-color: var(--clr-dark-blue);
+  color: var(--clr-neu-white);
+  padding: 2rem 1.25rem;
+  border-radius: 0.5rem;
+}
+
+.star-container {
+  background-color: var(--clr-very-dark-blue);
+  padding: 0.5rem;
+  width: 32px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 15px;
+  color: var(--clr-light-grey);
+  margin-bottom: 1.5rem;
+}
+
+.rating-choices-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.rating-choices-container div {
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  background-color: var(--clr-very-dark-blue);
+  color: var(--clr-light-grey);
+  opacity: 0.7;
+}
+
+button {
+  width: 100%;
+  background-color: var(--clr-pri-orange);
+  color: var(--clr-neu-white);
+  padding: 0.75rem;
+  border-radius: 2rem;
+  border: 0px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.15rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--clr-neu-white);
+  color: var(--clr-pri-orange);
+}
+
+@media (min-width: 500px) {
+  .rating-container {
+    max-width: 450px;
+  }
 }
 
 .inactive {
