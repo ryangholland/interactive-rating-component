@@ -1,11 +1,11 @@
 :root {
-    --clr-pri-orange: hsl(25, 97%, 53%);
+  --clr-pri-orange: hsl(25, 97%, 53%);
 
-    --clr-neu-white: hsl(0, 0%, 100%);
-    --clr-light-grey: hsl(217, 12%, 63%);
-    --clr-medium-grey: hsl(216, 12%, 54%);
-    --clr-dark-blue: hsl(213, 19%, 18%);
-    --clr-very-dark-blue: hsl(216, 12%, 8%);
+  --clr-neu-white: hsl(0, 0%, 100%);
+  --clr-light-grey: hsl(217, 12%, 63%);
+  --clr-medium-grey: hsl(216, 12%, 54%);
+  --clr-dark-blue: hsl(213, 19%, 18%);
+  --clr-very-dark-blue: hsl(216, 12%, 8%);
 }
 
 *,
@@ -19,11 +19,15 @@
   font: inherit;
 }
 
-img, svg {
+img,
+svg {
   display: block;
   max-width: 100%;
 }
 
 body {
+}
 
+.inactive {
+  display: none;
 }
