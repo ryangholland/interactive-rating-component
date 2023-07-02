@@ -83,7 +83,6 @@ p {
   position: absolute;
 }
 
-.rating-choices-container div,
 .rating-choices-container label {
   display: grid;
   place-items: center;
