@@ -43,6 +43,7 @@ body {
   color: var(--clr-neu-white);
   padding: 2rem 1.25rem;
   border-radius: 0.5rem;
+  min-height: 400px;
 }
 
 .star-container {
