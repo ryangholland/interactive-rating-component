@@ -66,6 +66,7 @@ p {
   font-size: 15px;
   color: var(--clr-light-grey);
   margin-bottom: 1.5rem;
+  line-height: 1.5rem;
 }
 
 .rating-choices-container {
@@ -131,7 +132,8 @@ button:hover {
 @media (min-width: 500px) {
   .rating-container,
   .thank-you-container {
-    max-width: 450px;
+    max-width: 400px;
+    padding: 1.85rem;
   }
 }
 
