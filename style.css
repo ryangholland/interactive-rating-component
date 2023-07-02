@@ -19,7 +19,7 @@
 * {
   margin: 0;
   font: inherit;
-  font-family: 'Overpass', sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 img,
@@ -74,9 +74,16 @@ p {
   justify-content: space-around;
   margin-bottom: 1.5rem;
   gap: 0.25rem;
+  position: relative;
 }
 
-.rating-choices-container div {
+[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.rating-choices-container div,
+.rating-choices-container label {
   display: grid;
   place-items: center;
   min-width: 60px;
@@ -84,7 +91,18 @@ p {
   background-color: hsla(var(--clr-very-dark-blue-hsl), 0.3);
   color: var(--clr-light-grey);
   aspect-ratio: 1 / 1;
-  
+}
+
+[type="radio"]:checked + label {
+  background: var(--clr-pri-orange);
+  color: var(--clr-neu-white);
+  font-weight: bolder;
+}
+
+label:hover {
+  cursor: pointer;
+  background-color: var(--clr-light-grey);
+  color: var(--clr-neu-white);
 }
 
 button {

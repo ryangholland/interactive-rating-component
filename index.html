@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Rating state start -->
-    <div class="rating-container ">
+    <div class="rating-container">
       <div class="star-container">
         <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -37,19 +37,30 @@
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
-      <div class="rating-choices-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>5</div>
-      </div>
-      <button>SUBMIT</button>
+      <form>
+        <div class="rating-choices-container">
+          <input type="radio" name="rating" id="rating1" />
+          <label for="rating1">1</label>
+
+          <input type="radio" name="rating" id="rating2" />
+          <label for="rating2">2</label>
+
+          <input type="radio" name="rating" id="rating3" />
+          <label for="rating3">3</label>
+
+          <input type="radio" name="rating" id="rating4" />
+          <label for="rating4">4</label>
+
+          <input type="radio" name="rating" id="rating5" />
+          <label for="rating5">5</label>
+        </div>
+        <button>SUBMIT</button>
+      </form>
     </div>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <div class="thank-you-container ">
+    <div class="thank-you-container inactive">
       <svg width="162" height="108" xmlns="http://www.w3.org/2000/svg">
         <g fill="none">
           <path
